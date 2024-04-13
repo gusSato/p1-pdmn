@@ -2,8 +2,8 @@
   border-radius: 2px;
 }
 
-.ok-btn {
+.lista-border {
   color: #000;
-  background-color: #c99de2;
+  border: #c99de2 solid 1px;
   border-radius: 2px;
 }

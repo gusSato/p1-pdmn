@@ -1,12 +1,11 @@
 import './App.css';
+import LembreteEntrada from './components/LembreteEntrada';
 
 function App() {
   return (
     <div className="App container">
-      <div className="row">
-        <h1 className="hello-text text-center col-md-12">
-          Hello, lembretes
-        </h1>
+      <div className="row mt-5">
+        <LembreteEntrada />
       </div>
     </div>
   );

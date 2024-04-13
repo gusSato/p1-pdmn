@@ -1,0 +1,15 @@
+.reminder-list-container {
+  border: 1px solid #9e37da;
+  border-radius: 8px;
+  min-height: 400px;
+}
+
+.type-reminder {
+  border-radius: 2px;
+}
+
+.ok-btn {
+  color: #000;
+  background-color: #c99de2;
+  border-radius: 2px;
+}

@@ -7,3 +7,8 @@
   background-color: #c99de2;
   border-radius: 2px;
 }
+
+.ok-btn:disabled {
+  background-color: #d3bfdf;
+  color: #525252;
+}

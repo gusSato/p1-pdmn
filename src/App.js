@@ -4,19 +4,20 @@ import LembreteEntrada from './components/LembreteEntrada';
 import LembreteLista from './components/LembreteLista';
 
 function App() {
-  const [reminders, setReminders] = useState([
-    'Fazer o projeto de PDM',
-    'Levar o peixe para tomar banho',
-    'Trazer a vó do jiu-jitsu',
-    'Comprar passagem para Florianópolis'
-  ]);
+  const [reminders, setReminders] = useState([]);
+
+  function handleInputDone(inputValue) {
+    if (inputValue.trim() != "") {
+      setReminders([...reminders, inputValue])
+    }
+  }
 
   return (
     <div className="App container">
       <div className="row mt-5">
         <div>
           <LembreteLista lista={reminders} />
-          <LembreteEntrada />
+          <LembreteEntrada onInputDoneCallback={handleInputDone}/>
         </div>
       </div>
     </div>
